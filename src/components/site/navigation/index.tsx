@@ -1,4 +1,5 @@
 import { ModeToggle } from '@/components/global/mode-toggle'
+import ShinyButton from '@/components/magicui/shiny-button'
 import { UserButton } from '@clerk/nextjs'
 import { User } from '@clerk/nextjs/server'
 import Image from 'next/image'
@@ -21,24 +22,24 @@ const Navigation = ({ user }: Props) => {
         />
         <span className="text-xl font-bold"> WebMaker.</span>
       </aside>
-      <nav className="hidden md:block absolute left-[50%] top-[50%] transform translate-x-[-50%] translate-y-[-50%]">
+      {/* <nav className="hidden md:block absolute left-[50%] top-[50%] transform translate-x-[-50%] translate-y-[-50%]">
         <ul className="flex items-center justify-center gap-8">
           <Link href={'#'}>Pricing</Link>
           <Link href={'#'}>About</Link>
           <Link href={'#'}>Documentation</Link>
           <Link href={'#'}>Features</Link>
         </ul>
-      </nav>
+      </nav> */}
       <aside className="flex gap-2 items-center">
-        <Link
-          href={'/agency'}
-          className={`${
-            user
-              ? 'border-2 border-primary text-primary font-bold hover:scale-105 transition'
-              : 'bg-primary text-white hover:bg-primary/80'
-          } p-1 px-4 rounded-md mr-1`}
-        >
-          {user ? 'Agency' : 'Login'}
+        <Link href={'/agency'}>
+          <ShinyButton
+            text={user ? 'Agency' : 'Login'}
+            className={`${
+              user
+                ? 'border-2 border-primary text-primary font-bold hover:scale-105 transition'
+                : 'bg-primary text-white hover:bg-primary/80'
+            } p-1 px-4 rounded-md mr-1`}
+          />
         </Link>
         <UserButton />
         <ModeToggle />
