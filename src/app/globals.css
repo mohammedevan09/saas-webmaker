@@ -20,33 +20,33 @@ B (255 */
 
 @layer base {
   :root {
-    --background: 216 100% 98.04%;
-    --foreground: 213.6 100% 4.9%;
+    --background: 240 100% 98.04%;
+    --foreground: 237.6 100% 4.9%;
 
-    --primary: 214.12 100% 50%;
+    --primary: 238.12 100% 50%;
     --primary-foreground: 0 0% 100%;
 
-    --card: 216 100% 98.04%;
-    --card-foreground: 213.6 100% 4.9%;
+    --card: 240 100% 98.04%;
+    --card-foreground: 237.6 100% 4.9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 213.6 100% 4.9%;
+    --popover-foreground: 237.6 100% 4.9%;
 
-    --secondary: 214.74 100% 92.55%;
-    --secondary-foreground: 216 100% 0.98%;
+    --secondary: 238.74 100% 92.55%;
+    --secondary-foreground: 240 100% 0.98%;
 
-    --muted: 213.6 100% 95.1%;
+    --muted: 237.6 100% 95.1%;
     --muted-foreground: 0 0% 40%;
 
-    --accent: 213.6 100% 95.1%;
-    --accent-foreground: 214.12 100% 50%;
+    --accent: 237.6 100% 95.1%;
+    --accent-foreground: 238.12 100% 50%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 240 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 0 0% 90.2%;
-    --input: 0 0% 90.2%;
-    --ring: 214.12 100% 50%;
+    --border: 240 0% 90.2%;
+    --input: 240 0% 90.2%;
+    --ring: 238.12 100% 50%;
 
     --radius: 0.5rem;
   }
@@ -57,36 +57,40 @@ B (255 */
        URL: https://gradient.page */
 
     /* CSS: .bg-gradient { background: var(--gradient) } */
-    --gradient: linear-gradient(to top left, #007adf, #00ecbc);
+    --gradient: linear-gradient(
+      to top left,
+      #5c6bc0,
+      #8e24aa
+    ); /* Adjusted gradient colors for indigo */
 
-    --background: 220 65% 3.52%;
-    --foreground: 220 10% 97.2%;
+    --background: 240 65% 3.52%;
+    --foreground: 240 10% 97.2%;
 
-    --muted: 220 50% 13.2%;
-    --muted-foreground: 220 10% 54.4%;
+    --muted: 240 50% 13.2%;
+    --muted-foreground: 240 10% 54.4%;
 
-    --popover: 220 45% 5.72%;
-    --popover-foreground: 220 10% 97.2%;
+    --popover: 240 45% 5.72%;
+    --popover-foreground: 240 10% 97.2%;
 
-    --card: 220 45% 5.72%;
-    --card-foreground: 220 10% 97.2%;
+    --card: 240 45% 5.72%;
+    --card-foreground: 240 10% 97.2%;
 
-    --border: 220 50% 13.2%;
-    --input: 220 50% 13.2%;
+    --border: 240 50% 13.2%;
+    --input: 240 50% 13.2%;
 
-    --primary: 220 100% 44%;
-    --primary-foreground: 220 10% 97.2%;
+    --primary: 240 100% 44%;
+    --primary-foreground: 240 10% 97.2%;
 
-    --secondary: 220 50% 13.2%;
-    --secondary-foreground: 220 10% 97.2%;
+    --secondary: 240 50% 13.2%;
+    --secondary-foreground: 240 10% 97.2%;
 
-    --accent: 220 50% 13.2%;
-    --accent-foreground: 220 10% 97.2%;
+    --accent: 240 50% 13.2%;
+    --accent-foreground: 240 10% 97.2%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 220 10% 97.2%;
+    --destructive: 240 62.8% 30.6%;
+    --destructive-foreground: 240 10% 97.2%;
 
-    --ring: 220 100% 44%;
+    --ring: 240 100% 44%;
   }
 }
 

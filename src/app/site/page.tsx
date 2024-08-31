@@ -6,6 +6,9 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card'
+import { Cover } from '@/components/ui/cover'
+import { LampContainer } from '@/components/ui/lamp'
+import { LayoutGrid } from '@/components/ui/layout-grid'
 import { pricingCards } from '@/lib/constants'
 import { stripe } from '@/lib/stripe'
 import clsx from 'clsx'
@@ -27,9 +30,8 @@ export default async function Home() {
         {/* grid */}
 
         <div className="absolute bottom-0 left-0 right-0 top-0 -z-10" />
-
         <p className="text-center text-lg mb-4">
-          Run your agency, in one place
+          <Cover>Run your agency, in one place</Cover>
         </p>
         <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
           <h1 className="text-9xl font-bold text-center md:text-[300px]">
@@ -38,7 +40,7 @@ export default async function Home() {
         </div>
         <div className="flex justify-center items-center relative md:mt-[-70px]">
           <Image
-            src={'/assets/preview.png'}
+            src={'/assets/preview2.png'}
             alt="banner image"
             height={1200}
             width={1200}
